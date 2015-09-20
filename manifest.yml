@@ -1,0 +1,11 @@
+---
+applications:
+- name: cs3
+  instances: 5
+  mem: 64M
+  services:
+    ${name}-db:
+      type: redis
+  stackato:
+    env:
+      OSLOVENI: "Ahojda"
